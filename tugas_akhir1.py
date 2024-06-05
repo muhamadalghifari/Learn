@@ -62,34 +62,28 @@ class Menu:
         ]
 
     def view_menu(self):
-        print("Menu:")
-        for item in self.items:
-            print(f"{item.name}: Rp{item.price}")
-
-def print_menu_header():
-    print("=" * 80)
-    print("|" + " " * 28 + "D A F T A R   M E N U" + " " * 29 + "|")
-    print("=" * 80)
-    print("|         Makanan        |        Minuman        |          Camilan          |")
-    print("-" * 80)
-    print("|  Ayam Goreng  : 30000  |  Jus Jeruk    : 10000 |  Pisang Coklat    : 15000 |")
-    print("|  Nasi Goreng  : 20000  |  Jus Alpukat  : 10000 |  Udang Keju       : 15000 |")
-    print("|  Sate Ayam    : 20000  |  Es Kelapa    : 10000 |  Udang Rambutan   : 15000 |")
-    print("|  Bakso        : 20000  |  Kopi Hitam   :  8000 |  Kentang Goreng   : 15000 |")
-    print("|  Soto Ayam    : 20000  |  Es Teh       :  8000 |  Roti Bakar       : 10000 |")
-    print("|  Mie Goreng   : 15000  |  Air Mineral  :  5000 |  Siomay           : 10000 |")
-    print("=" * 80)
-    print("=" * 80)
-    print("|       Untuk pembelian diatas Rp50.000 mendapatkan diskon sebesar 10%         |")
-    print("|           Silakan untuk memilih opsi yang tersedia di bawah ini              |")
-    print("=" * 80)
+        print("=" * 80)
+        print("|" + " " * 28 + "D A F T A R   M E N U" + " " * 29 + "|")
+        print("=" * 80)
+        print("|         Makanan        |        Minuman         |          Camilan           |")
+        print("-" * 80)
+        print("|  Ayam Goreng  : 30000  |  Jus Jeruk    : 10000  |  Pisang Coklat    : 15000  |")
+        print("|  Nasi Goreng  : 20000  |  Jus Alpukat  : 10000  |  Udang Keju       : 15000  |")
+        print("|  Sate Ayam    : 20000  |  Es Kelapa    : 10000  |  Udang Rambutan   : 15000  |")
+        print("|  Bakso        : 20000  |  Kopi Hitam   :  8000  |  Kentang Goreng   : 15000  |")
+        print("|  Soto Ayam    : 20000  |  Es Teh       :  8000  |  Roti Bakar       : 10000  |")
+        print("|  Mie Goreng   : 15000  |  Air Mineral  :  5000  |  Siomay           : 10000  |")
+        print("=" * 80)
+        print("=" * 80)
+        print("|       Untuk pembelian diatas Rp50.000 mendapatkan diskon sebesar 10%         |")
+        print("|           Silakan untuk memilih opsi yang tersedia di bawah ini              |")
+        print("=" * 80)
 
 menu = Menu()
 order = Order()
 
 def main():
     while True:
-        print_menu_header()
         menu.view_menu()
         print("\nPilih opsi:")
         print("1. Tambah item ke keranjang")
